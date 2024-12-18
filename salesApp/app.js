@@ -15,6 +15,10 @@ app.get('/' , function (req,res) {
 app.get('/grocery/home', function (req,res) { 
     res.render('v_grocery/grocery-home.ejs')
 } )
+
+app.get('/restaurant/home', function (req,res) { 
+    res.render('v_restaurant/index.ejs')
+} )
 app.listen(3000, ()=> {
     console.log("server running on port 3000");
 })
