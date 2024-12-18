@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card-img-custom {
+  height: 250px; /* Atur tinggi gambar */
+  object-fit: cover; /* Membuat gambar terpotong agar sesuai tanpa distorsi */
+  width: 100%; /* Memastikan lebar gambar selalu penuh */
+}
+    </style>
   </head>
   <body>
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="#">Restaurant</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +37,7 @@
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Pesan sekarang</a>
+                <a class="nav-link text-green btn btn-light" href="#">Pesan sekarang</a>
               </li>
             </ul>
           </div>
@@ -61,7 +68,84 @@
         </button>
       </div>
       <!-- end corousell-->
-
+      <!-- card -->
+       <h1 class="text-center mt-5 mb-5">our specialty</h1>
+       <div class="card-group">
+        <div class="card">
+          <img src="/img/gambarresto.jpg" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/cardresto.jpg" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/cardresto2.jpg" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 mb-5">
+        <a href="about.html" class="btn btn-success">More About Us</a>
+      </div>
+     <!-- card -->
+      <!-- our signature menu -->
+        <h1 class="text-center">our signature menu</h1>
+      <div class="container mt-5">
+        <!-- Menu Pertama -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="/img/gambarburger.jpg" class="img-fluid rounded" alt="Menu 1">
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Signature Dish 1</h2>
+            <p>
+              Discover the perfect blend of flavors in our first signature dish. A culinary masterpiece made with the freshest ingredients.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Menu Kedua -->
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+          <div class="col-md-6">
+            <img src="/img/gambarsandwich.jpg" class="img-fluid rounded" alt="Menu 2">
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Signature Dish 2</h2>
+            <p>
+              A bold and flavorful experience awaits you. This dish brings together tradition and innovation in every bite.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Menu Ketiga -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="/img/gambarhotdogs.jpg" class="img-fluid rounded" alt="Menu 3">
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Signature Dish 3</h2>
+            <p>
+              Indulge in a dish that captures the essence of our culinary philosophy. Fresh, creative, and unforgettable.
+            </p>
+          </div>
+        </div>
+      </div>      
+      <div class="text-center mt-5 mb-5">
+        <a href="about.html" class="btn btn-success">All menu</a>
+      </div>
+       <!-- end signature menu -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
