@@ -30,6 +30,10 @@ app.get('/register', function (req, res) {
     res.render('v_authentication/register.ejs');
   });
 
+  app.get('/about/home', function (req, res) {
+    res.render('v_restaurant/about.ejs');
+  });
+
 app.listen(3000, () => {
   console.log('server running on port 3000');
 });
