@@ -34,6 +34,14 @@ app.get('/register', function (req, res) {
     res.render('v_restaurant/about.ejs');
   });
 
+  app.get('/pesan/home', function (req, res) {
+    res.render('v_restaurant/pesan.ejs');
+  });
+
+  app.get('/kontak/home', function (req, res) {
+    res.render('v_restaurant/kontak.ejs');
+  });
+
 app.listen(3000, () => {
   console.log('server running on port 3000');
 });
