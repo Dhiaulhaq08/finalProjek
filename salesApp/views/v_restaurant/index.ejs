@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-</head>
-<body>
-    <h1>hello world</h1>
-</body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card-img-custom {
+  height: 250px; /* Atur tinggi gambar */
+  object-fit: cover; /* Membuat gambar terpotong agar sesuai tanpa distorsi */
+  width: 100%; /* Memastikan lebar gambar selalu penuh */
+}
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-success sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Restaurant</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/menu/home">menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mr-2" href="/kontak/home">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mr-2" href="/about/home">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-green btn btn-light" href="/pesan/home">Pesan sekarang</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- end navbar -->
+     <!-- corousell -->
+     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: 600px; background-position: center; background-size: cover;" >
+          <div class="carousel-item active">
+            <img src="/img/fastfoodmenuu.jpg" class="d-block h-40 w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/fastfood2.jpg" class="d-block h-40 w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/fastfood3.jpg" class="d-block h-40 w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end corousell-->
+      <!-- card -->
+       <h1 class="text-center mt-5 mb-5">our specialty</h1>
+       <div class="card-group">
+        <div class="card">
+          <img src="/img/gambarresto.jpg" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/cardresto.jpg" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/cardresto2.jpg" class="card-img-top card-img-custom" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 mb-5">
+        <a href="/about/home" class="btn btn-success">More About Us</a>
+      </div>
+     <!-- card -->
+      <!-- our signature menu -->
+        <h1 class="text-center">our signature menu</h1>
+      <div class="container mt-5">
+        <!-- Menu Pertama -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="/img/gambarburger.jpg" class="img-fluid rounded" alt="Menu 1">
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Signature Dish 1</h2>
+            <p>
+              Discover the perfect blend of flavors in our first signature dish. A culinary masterpiece made with the freshest ingredients.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Menu Kedua -->
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+          <div class="col-md-6">
+            <img src="/img/gambarsandwich.jpg" class="img-fluid rounded" alt="Menu 2">
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Signature Dish 2</h2>
+            <p>
+              A bold and flavorful experience awaits you. This dish brings together tradition and innovation in every bite.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Menu Ketiga -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="/img/gambarhotdogs.jpg" class="img-fluid rounded" alt="Menu 3">
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-3">Signature Dish 3</h2>
+            <p>
+              Indulge in a dish that captures the essence of our culinary philosophy. Fresh, creative, and unforgettable.
+            </p>
+          </div>
+        </div>
+      </div>      
+      <div class="text-center mt-5 mb-5">
+        <a href="/menu/home" class="btn btn-success">See All menu</a>
+      </div>
+       <!-- end signature menu -->
+        <!-- footer -->
+        <footer class="bg-success text-light py-4">
+            <div class="container">
+              <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4 mb-3">
+                  <h5>About Us</h5>
+                  <p>
+                    Welcome to Groucetourant, where taste meets perfection. We serve the finest dishes crafted with passion and fresh ingredients.
+                  </p>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-md-4 mb-3">
+                  <h5>Contact Us</h5>
+                  <p><i class="bi bi-geo-alt"></i> 123 Food Street, Culinary City</p>
+                  <p><i class="bi bi-telephone"></i> +123 456 7890</p>
+                  <p><i class="bi bi-envelope"></i> contact@restaurant.com</p>
+                </div>
+                <!-- Social Media Section -->
+                <div class="col-md-4 mb-3">
+                  <h5>Follow Us</h5>
+                  <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+              <!-- Copyright Section -->
+              <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2024 [Restaurant Name]. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+          
+         <!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
